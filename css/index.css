@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+:root {
+    --main-background:#fdfdff;
+    --accent:#f9bcaf;
+    --icons:#afafaf;
+}
+
+body {
+    background-color: var(--main-background);
+    height: 100vh;
+    padding-left:10% ;
+}
+/* start styling the header  */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding: 20px 40px; 
+    background-color: transparent;
+}
+
+nav a{
+margin-right:25px;
+padding-bottom: .4rem;
+color: black;
+text-transform: capitalize;
+} 
+nav a:hover {
+    border-bottom:1px solid black ;
+}
+header i a {
+    margin-left: 5px;
+}
+
+header i {
+    margin-right: 100px;
+    color: #f9bcaf;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+header i:hover {
+    background-color: #f9bcaf;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* end styling the header */
+/* start styling the side bar */
+aside {
+    position: fixed;
+    left: 0;
+    top:0;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    height: 100vh;
+    border-right: 1px solid #d8d8d8;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.social a i {
+    color: var(--icons);
+    margin-bottom: 10px;
+}
+
+aside .logo,.wer {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+.wer {
+    color: var(--accent);
+    font-size: 23px;
+}
+/* end styling the side bar */
+/* start styling the home section */
+.home{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    padding-left: 40px;
+    background-color: transparent;
+}
+
+h5 {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.dif {
+    color: #f9bcaf;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    background-color: transparent;
+}
+
+img {
+    width: 450px;
+    height: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 150px;
+    background-color: #f9bcaf;
+    box-shadow: .9px .9px 5px black;
+    margin-top: 20px;
+    color: white;
+    text-transform: capitalize;
+    transition: 1s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn a {
+    color: white;
+}
+/* end styling the home section */
+/* start styling the footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 138px;
+    background-color: transparent;
+    padding-left: 40px;
+}
+
+.box-1,.box-2,.box-3 {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-1 {
+    background-color: transparent;
+    margin-right: 40px;
+    border-right: 1px solid #afafaf;
+    padding-top:10px;
+    padding-right: 40px;
+}
+.box-2 {
+    background-color: transparent;
+    padding-top:10px;
+    border-right: 1px solid #afafaf;
+    padding-right: 50px;
+    margin-right: 40px;
+}
+
+.box-3 {
+    background-color: transparent;
+    padding-top:10px;
+    padding-right: 30px;
+    margin-right: 20px;
+}
+
+.footer .imp {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+/* end footer styling */
+/* start about me section */
+.about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-background);
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+.heading {
+    font-size: 3rem;
+    text-transform: capitalize;
+    line-height: 4rem;
+}
+
+.subheading{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+/* start styling the skills section */
+
+.skills {
+    min-height: 100vh;
+    background-color: #fdfdff;
+    padding-left: 40px;
+    padding-top: 2rem;
+}
+
+.skills .heading {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    letter-spacing: .2rem;
+    margin-bottom: 5.5rem;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  border: 2px solid #f9bcaf;
+  background-color: #fdfdff;
+  text-align: center;
+}
+
+#html {
+    color: #dc4d25;
+}
+
+#css {
+    color :#026db0;
+}
+
+#js {
+    color: #e8d44d;
+}
+
+.card p {
+    line-height: 1.6rem;
+}
